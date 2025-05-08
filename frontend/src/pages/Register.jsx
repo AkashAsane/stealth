@@ -10,7 +10,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/auth/register', { email, password });
+      await axios.post('https://stealth-a46a.onrender.com/api/auth/register', { email, password });
       navigate('/login');
     } catch (error) {
       console.error('Registration failed', error);
